@@ -1,2 +1,12 @@
-Uploaded .hal and .ini files
-Uploaded linuxcnc error report
+My repo is a bit confusing.
+
+This is what I would do...
+
+Create a directory off your home called "repo", clone my repo to it.   And then copy just the SabreCNC config,  so
+  mkdir ~/repo
+  cd ~/repo
+  git clone git@github.com:SkyMoCo/LinuxCNCConfigs.git
+  cd ~/repo/LinuxCNCConfigs/SabreCNC/configs
+  cp -r SabreCNC ~/linuxcnc/configs
+  cd ~/linuxcnc/configs/SabreCNC/
+  linuxcnc SabreCNC.ini
