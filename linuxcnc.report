@@ -1,0 +1,130 @@
+Error report created by /usr/lib/tcltk/linuxcnc/show_errors.tcl:
+
+Print file information:
+RUN_IN_PLACE=no
+LINUXCNC_DIR=
+LINUXCNC_BIN_DIR=/usr/bin
+LINUXCNC_TCL_DIR=/usr/lib/tcltk/linuxcnc
+LINUXCNC_SCRIPT_DIR=
+LINUXCNC_RTLIB_DIR=/usr/lib/linuxcnc/modules
+LINUXCNC_CONFIG_DIR=
+LINUXCNC_LANG_DIR=/usr/lib/tcltk/linuxcnc/msgs
+INIVAR=inivar
+HALCMD=halcmd
+LINUXCNC_EMCSH=/usr/bin/wish8.6
+LINUXCNC - 2.9.1
+Machine configuration directory is '/home/rollin/linuxcnc/configs/SabreCNC/configs/SabreCNC_copy'
+Machine configuration file is 'SabreCNC_copy.ini'
+INIFILE=/home/rollin/linuxcnc/configs/SabreCNC/configs/SabreCNC_copy/SabreCNC_copy.ini
+VERSION=1.1
+PARAMETER_FILE=linuxcnc.var
+TPMOD=
+HOMEMOD=
+TASK=milltask
+HALUI=halui
+DISPLAY=axis
+COORDINATES=XYZ
+KINEMATICS=trivkins coordinates=XYZ
+Starting LinuxCNC...
+Starting LinuxCNC server program: linuxcncsvr
+Loading Real Time OS, RTAPI, and HAL_LIB modules
+Starting LinuxCNC IO program: io
+Starting HAL User Interface program: halui
+linuxcnc TPMOD=tpmod HOMEMOD=homemod EMCMOT=motmod
+CANNOT FIND FILE FOR:TestConfig.hal
+Shutting down and cleaning up LinuxCNC...
+Running HAL shutdown script
+Removing HAL_LIB, RTAPI, and Real Time OS modules
+Removing NML shared memory segments
+
+Debug file information:
+Note: Using POSIX realtime
+7859
+Stopping realtime threads
+Unloading hal components
+Note: Using POSIX realtime
+
+
+
+-----------------------------------------------------------------------
+Info report created by linuxcnc_info:
+The file:    /tmp/linuxcnc_info.txt
+can be posted to a forum or a web site like:
+     http://pastebin.com
+in order to provide information about the linuxcnc
+system and configuration.
+
+                Date: Wed Dec 6 02:33:31 PM CST 2023
+            UTC Date: Wed Dec 6 08:33:31 PM UTC 2023
+        this program: /usr/bin/linuxcnc_info
+              uptime: 14:33:31 up 1 day, 17:55, 1 user, load average: 1.86, 2.61, 2.40
+     lsb_release -sa: Debian Debian GNU/Linux 12 (bookworm) 12 bookworm
+            linuxcnc: /usr/bin/linuxcnc
+                 pwd: /home/rollin/linuxcnc/configs/SabreCNC/configs/SabreCNC_copy
+                USER: rollin
+             LOGNAME: rollin
+                HOME: /home/rollin
+              EDITOR: 
+              VISUAL: 
+            LANGUAGE: 
+                TERM: dumb
+           COLORTERM: 
+             DISPLAY: :0.0
+             DESKTOP: lightdm-xsession
+        display size: 1920x1080 pixels (508x285 millimeters)
+                PATH: /usr/bin:/home/rollin/linuxcnc/configs/SabreCNC/configs/SabreCNC_copy/bin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+uname items:
+         nodename -n: CNC
+      kernel-name -s: Linux
+      kernel-vers -v: #1 SMP PREEMPT_RT Debian 6.1.55-1 (2023-09-29)
+          machine -m: x86_64
+        processor -p: unknown
+         platform -i: unknown
+      oper system -o: GNU/Linux
+
+/proc items:
+             cmdline: BOOT_IMAGE=/boot/vmlinuz-6.1.0-13-rt-amd64 root=UUID=33498318-acdf-4dda-8bad-7faf0e8c4c55 ro initrd=/install/gtk/initrd.gz quiet
+          model name: Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+               cores: 2
+             cpu MHz: 3292.405
+             parport: 
+              serial: 0000-0000 : serial
+
+Versions:
+                 gcc: gcc (Debian 12.2.0-14) 12.2.0
+              python: Python 3.11.2
+                 git: git version 2.39.2
+          git commit: NA
+                 tcl: 8.6
+                  tk: 8.6
+               glade: not_in_PATH
+
+linuxcnc_var all:
+
+     LINUXCNCVERSION: 2.9.1
+LINUXCNC_AUX_GLADEVCP: /usr/share/linuxcnc/aux_gladevcp
+LINUXCNC_AUX_EXAMPLES: /usr/share/linuxcnc/aux_examples
+            REALTIME: /usr/lib/linuxcnc/realtime
+                 RTS: uspace
+          HALLIB_DIR: /usr/share/linuxcnc/hallib
+              PYTHON: /usr/bin/python3
+
+dpkg -l '*linuxcnc*':
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                Version      Architecture Description
++++-===================-============-============-=====================================================================
+un  linuxcnc            <none>       <none>       (no description available)
+un  linuxcnc-dev        <none>       <none>       (no description available)
+un  linuxcnc-doc        <none>       <none>       (no description available)
+ii  linuxcnc-doc-de     1:2.9.1      all          motion controller for CNC machines and robots (German documentation)
+ii  linuxcnc-doc-en     1:2.9.1      all          motion controller for CNC machines and robots (English documentation)
+ii  linuxcnc-doc-es     1:2.9.1      all          controlador de movimiento para máquinas CNC y robots (Español).
+ii  linuxcnc-doc-fr     1:2.9.1      all          motion controller for CNC machines and robots (French documentation)
+un  linuxcnc-sim        <none>       <none>       (no description available)
+un  linuxcnc-sim-dev    <none>       <none>       (no description available)
+ii  linuxcnc-uspace     1:2.9.1      amd64        motion controller for CNC machines and robots
+ii  linuxcnc-uspace-dev 1:2.9.1      amd64        PC based motion controller for real-time Linux
+
